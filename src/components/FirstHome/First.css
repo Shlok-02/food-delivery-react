@@ -1,0 +1,125 @@
+.first-home{
+    display: flex;
+    margin-top: 40px;
+}
+
+.left-first{
+    width: 50%;
+    margin-top: 80px;
+    line-height: 1.5;
+}
+
+.left-first h5{
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.left-first h1{
+    width: 70%;
+    font-size: 2.5rem;
+    line-height: 55px;
+    margin-bottom: 1.5rem;
+}
+
+.left-first span{
+    color: #df2020;
+}
+
+.left-first p{
+    font-size: 1rem;
+    line-height: 30px;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.left-first-buttons{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.order button{
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+
+    background: #df2020;
+    color: #fff;
+    transition: .3s;
+
+    display: flex;
+    align-items:center;
+
+    margin-right: 40px;
+}
+
+svg{
+   font-size: 15px;
+   margin-left: 3px;
+}
+
+
+.order button:hover{
+    color: white;
+    background-color: #343a40;
+}
+
+.foods button{
+    border: 1px solid #df2020;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+
+    background: #fff;
+    color: #df2020;
+    transition: .3s;
+
+    display: flex;
+    align-items:center;
+
+    font-weight: 600;
+}
+
+
+.left-first-features{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.left-first-features svg{
+    color: #df2020;
+    font-size: 20px;
+}
+
+.left-first-features p{
+    color: #212245;
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+
+.ship,.checkout{
+    display: flex;
+    align-items: center;
+}
+
+.checkout{
+    margin-left: 40px;
+}
+.right-home{
+    width: 50%;
+}
+
+
+
+.right-home img{
+    width: 100%;
+}

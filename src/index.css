@@ -42,3 +42,8 @@ h2 {
 section {
   padding: 60px 0px;
 }
+
+.main-home{
+  width: 83%;
+  margin: auto;
+}

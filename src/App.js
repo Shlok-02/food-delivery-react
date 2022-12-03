@@ -1,7 +1,14 @@
+import products from "./assets/fake-data/products";
+import { Routes, Route } from "react-router-dom";
+import Home from "./components/Home/Home";
+
 function App() {
+  console.log(products)
   return (
     <div>
-      <h1>hello world</h1>
+     <Routes>
+        <Route path='/' exact element={<Home/>}></Route>
+      </Routes>
     </div>
   );
 }
