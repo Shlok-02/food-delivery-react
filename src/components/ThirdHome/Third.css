@@ -24,6 +24,7 @@
     padding: 7px 20px;
     background: transparent;
     color: #fff;
+    cursor: pointer;
 }
 
 button{
@@ -89,5 +90,8 @@ button{
 }
 
 .price{
+    margin-top: 10px;
     margin-bottom: 15px;
+    color: #df2020;
+    font-weight: 600;
 }

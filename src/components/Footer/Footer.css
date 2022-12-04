@@ -65,18 +65,28 @@
 .bottom-footer{
     font-size: .8rem;
     color: #df2020;
+    display: inline;
+}
+
+.footer-bottom-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
 
 .footer-icons{
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
 
 .footer-icons svg{
-    font-size: 18px;
+    font-size: 24px;
     background: #df2020;
     color: #fff;
     border-radius: 50%;
     cursor: pointer;
+    margin: 0 5px;
 }
 
 .subscribe input{

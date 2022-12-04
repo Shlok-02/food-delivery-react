@@ -6,7 +6,16 @@
     font-weight: 600;
     font-size: 1rem;
     color: #212245;
+    overflow: hidden;
+
+    background-color: #fcfcfc;
 }
+/* 
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+} */
 
 .left-header{
     width: 30%;

@@ -10,7 +10,7 @@ const Header = () => {
     let logo=require("../../assets/images/res-logo.png")
   return (
     <>
-        <div className="main-header">
+        <div className="main-header sticky">
             <div className="left-header">
                 <img src={logo} alt="Logo" />
                 <p>Tasty Treat</p>

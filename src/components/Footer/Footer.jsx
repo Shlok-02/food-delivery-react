@@ -5,9 +5,34 @@ import {AiFillInstagram} from "react-icons/ai";
 import {AiFillGithub} from "react-icons/ai"
 import { AiFillTwitterCircle } from "react-icons/ai";
 import "./Footer.css"
+import { useState } from 'react';
 
 const Footer = () => {
     let logo=require("../../assets/images/res-logo.png")
+    const[email,setEmail]=useState('')
+
+
+    function isValidEmail(email) {
+        return /\S+@\S+\.\S+/.test(email);
+      }
+
+    function handleChange(e){
+        setEmail(e.target.value)
+        //console.log(e.target.value)
+    }
+
+    function handleClick(e){
+        console.log(e)
+       if (!isValidEmail(email)) {
+        alert("Check emial properly")
+        setEmail('')
+    } else {
+        alert("Successfull subscribe")
+        setEmail('')
+    }
+        e.preventDefault()
+    }
+
   return (
     <>
         <div className="main-footer">
@@ -48,17 +73,20 @@ const Footer = () => {
                         <h3>NewsLetter</h3>
                         <p>Subscribe our newsletter</p>
                        <div className="input">
-                       <input type="email" placeholder='Enter your email'/> <AiOutlineMail/>
+                       <input onChange={(e)=>handleChange(e)} type="email" placeholder='Enter your email'/> <AiOutlineMail onClick={(e)=>handleClick(e)}/>
                        </div>
                     </div>
                 </div>
-
-                <div className="bottom-footer">
-                    <p>Copyright - 2022, website made by Shlok Gangatirkar. All Rights Reserved</p>
+                
+                <div className="footer-bottom-wrapper">
+                    <div className="bottom-footer">
+                        <p>Copyright - 2022, website made by Shlok Gangatirkar. All Rights Reserved</p>
+                    </div>
+                    <div className="footer-icons">
+                        <p>Follow: </p><BsFacebook/> <AiFillGithub/> <AiFillTwitterCircle/> <AiFillInstagram/>
+                    </div>
                 </div>
-                <div className="footer-icons">
-                    <p>Follow: <BsFacebook/> <AiFillGithub/> <AiFillTwitterCircle/> <AiFillInstagram/></p>
-                </div>
+                
             </div>
         </div>
     </>
