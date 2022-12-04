@@ -1,0 +1,58 @@
+.main-fourth{
+    width: 83%;
+    margin: auto;
+    
+    display: flex;
+    align-items: center;
+}
+
+.left-fourth{
+    width: 150%;
+}
+
+.left-fourth img{
+    width: 100%;
+}
+
+.right-fourth h2{
+    margin-bottom: 1.5rem;
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: #212245;
+}
+.right-fourth span{
+    color: #df2020;
+}
+
+.right-fourth p{
+    color: #777;
+    line-height: 28px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.fourth-wrappper{
+    display: grid;
+    grid-template-columns:0.005fr 1fr;
+}
+
+.fourth-wrappper p{
+    margin-left: 10px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+    color: #212529;
+}
+
+.fourth-wrappper svg{
+    font-size: 20px;
+    
+    font-weight: 500!important;
+    color: #df2020;
+}
+
+.fourth-feature{
+    margin-bottom: 1rem;
+    color: #777;
+    
+}

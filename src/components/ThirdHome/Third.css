@@ -1,0 +1,93 @@
+.main-third{
+    text-align: center;
+    
+    width: 83%;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.categories{
+    background: #df2020;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px 0;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.categories button{
+    border: none;
+    outline: none;
+    padding: 7px 20px;
+    background: transparent;
+    color: #fff;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+
+.categories button img{
+    width: 20px;
+    margin-left: 10px;
+}
+
+.activeBtn{
+    background: #fff!important;
+    border-radius: 5px;
+    color: #df2020!important;
+}
+
+.display-foods{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
+}
+
+.food{
+    border: 1px solid #fed5d9;
+    text-align: center;
+    padding: 30px;
+}
+
+.food img{
+    width: 40%;
+    transition: 0.5s all ease-in-out;
+    margin-bottom: 15px;
+}
+
+.food img:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.food h5{
+    color: #212245;
+    font-size: 1rem;
+}
+
+.cart button{
+    border: none;
+    padding: 7px 25px;
+    background: #df2020;
+    color: #fff;
+    border-radius: 5px;
+    font-size: .9rem;
+}
+
+.cart{
+    display:flex;
+    justify-content: center;
+}
+
+.price{
+    margin-bottom: 15px;
+}

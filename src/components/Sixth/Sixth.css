@@ -1,0 +1,72 @@
+.main-sixth{
+    width: 83%;
+    margin: auto;
+    
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.left-sixth{
+    width: 50%;
+}
+
+.left-sixth h5{
+    color: #df2020;
+    font-size: 1.5rem;
+}
+
+.left-sixth h2{
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: #212245;
+    margin-bottom: 1.5rem!important;
+}
+
+.left-sixth span{
+    color: #df2020;
+}
+
+.left-sixth p{
+    color: #777;
+    line-height: 30px;
+}
+
+.review-person{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.review{
+    margin-top: 20px;
+}
+.review p{
+    font-weight: 600;
+    color: #777;
+    line-height: 30px;
+}
+
+.review-person p{
+    color: #212245;
+    margin-left: 15px;
+}
+
+.review-person img{
+    width: 8px;
+}
+
+.right-sixth{
+    width: 50%;
+}
+
+.right-sixth img{
+    width: 100%;
+}
+
+Carousel{
+    width: 100px;
+    height: 100px;
+}

@@ -1,0 +1,58 @@
+.main-fifth{
+    width: 83%;
+    margin: auto;
+}
+.hot-pizza{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
+}
+
+.fifth-food{
+    border: 1px solid #fed5d9;
+    text-align: center;
+    padding: 30px;
+}
+
+.fifth-food img{
+    width: 40%;
+    transition: 0.5s all ease-in-out;
+    margin-bottom: 15px;
+}
+
+.fifth-food img:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.fifth-food h5{
+    color: #212245;
+    font-size: 1rem;
+}
+
+.fifth-cart button{
+    border: none;
+    padding: 7px 25px;
+    background: #df2020;
+    color: #fff;
+    border-radius: 5px;
+    font-size: .9rem;
+}
+
+.fifth-cart{
+    display:flex;
+    justify-content: center;
+}
+
+.fifth-price{
+    margin-bottom: 15px;
+}
+
+.fifth-display-foods h2{
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: #212245;  
+    text-align: center;
+}

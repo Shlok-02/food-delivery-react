@@ -1,3 +1,7 @@
+.main-second{
+    width: 83%;
+    margin: auto;
+}
 .top-second{
     display: grid;
     grid-template-columns: repeat(4,1fr);

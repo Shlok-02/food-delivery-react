@@ -1,6 +1,7 @@
 import React from 'react'
 import products from "../../assets/fake-data/products";
 import { useState } from 'react';
+import "./Third.css"
 
 const Third = () => {
     let burger=require("../../assets/images/hamburger.png")
@@ -25,29 +26,40 @@ const Third = () => {
         <div className="main-third">
             <h2>Popular Foods</h2>
             <div className="categories">
-                <button onClick={(e)=>handleClick(e)}>All</button>
-                <button onClick={(e)=>handleClick(e)}> <img src={burger} alt="" />Burger</button>
-                <button onClick={(e)=>handleClick(e)}><img src={pizza} alt="" />Pizza</button>
-                <button onClick={(e)=>handleClick(e)}><img src={bread} alt="" />Bread</button>
+                <button onClick={(e)=>handleClick(e)} className='activeBtn'>All</button>
+                <button onClick={(e)=>handleClick(e)}> <img src={burger} alt="" /><p>Burger</p></button>
+                <button onClick={(e)=>handleClick(e)}><img src={pizza} alt="" /><p>Pizza</p></button>
+                <button onClick={(e)=>handleClick(e)}><img src={bread} alt="" /><p>Bread</p></button>
             </div>     
-
-
-
-                {console.log(typeof (type))}
-
-                {
+            <div className="display-foods">
+               {
                     products.map((value, index ) => {
                         let results=[] 
                         if(type=="All"){
                             return (
-                                
-                                <h1 key={index}>{value.title }
-                                 </h1>
+                                <div className="food">
+                                    <img src={value.image01} alt={value.category} />
+                                    <h5>{value.title}</h5>
+                                    <div className="info">
+                                       <div className="price">
+                                        ${value.price}
+                                       </div>
+
+                                       <div className="cart">
+                                        <button>Add to cart</button>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
                                )
                         }        
                         
                    })
                  }
+         </div>
+
+
+
         </div>
     </>
   )
