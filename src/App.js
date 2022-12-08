@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Contact from "./components/Contact/Contact";
 import Food from "./components/Food/Food";
+import Individual from "./components/Individual Food/Individual";
 function App() {
   console.log(products)
   return (
@@ -11,6 +12,7 @@ function App() {
         <Route path='/' exact element={<Home/>}></Route>
         <Route path='/foods' exact element={<Food/>}></Route>
         <Route path='/contact' exact element={<Contact/>}></Route>
+        <Route path='foods/id=:foodID' exact element={<Individual/>}></Route>
       </Routes>
     </div>
   );

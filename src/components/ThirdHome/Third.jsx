@@ -2,8 +2,11 @@ import React from 'react'
 import products from "../../assets/fake-data/products";
 import { useState } from 'react';
 import "./Third.css"
+import { useNavigate } from 'react-router-dom';
 
 const Third = () => {
+    let navigate=useNavigate();
+
     let burger=require("../../assets/images/hamburger.png")
     let pizza=require("../../assets/images/pizza.png")
     let bread=require("../../assets/images/bread.png")
@@ -13,12 +16,10 @@ const Third = () => {
     const[data,setData]=useState([])
     const[newArr,setnewArr]=useState([])
 
-    function handleClick(e){
-        console.log(e.target.innerText)
-        setType(e.target.innerText)
-        setData(products)
-        
-        e.preventDefault();
+    function handleClick(e,value){
+        console.log(e)
+        console.log(value)
+        navigate(`foods/id=${e.id}`);
     }
 
 
@@ -38,9 +39,9 @@ const Third = () => {
                         let results=[] 
                         if(value.category==type){
                             return (
-                                <div className="food">
+                                <div className="food" key={index}>
                                     <img src={value.image01} alt={value.category} />
-                                    <h5>{value.title}</h5>
+                                    <h5 onClick={(index)=>handleClick(value)}>{value.title}</h5>
                                     <div className="info">
                                        <div className="price">
                                        <h5> ${value.price} </h5>
@@ -58,7 +59,7 @@ const Third = () => {
                             return (
                                 <div className="food">
                                     <img src={value.image01} alt={value.category} />
-                                    <h5>{value.title}</h5>
+                                    <h5 onClick={(index)=>handleClick(value)}>{value.title}</h5>
                                     <div className="info">
                                        <div className="price">
                                         ${value.price}

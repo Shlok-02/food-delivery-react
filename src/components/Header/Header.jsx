@@ -7,6 +7,9 @@ import { useLocation } from 'react-router-dom';
 
 const Header = () => {
     const {pathname} = useLocation();
+    console.log(pathname.split('/')[1])
+    let foodPath=pathname.split('/')[1]
+    console.log(pathname)
     let logo=require("../../assets/images/res-logo.png")
   return (
     <>
@@ -18,7 +21,7 @@ const Header = () => {
             <div className="mid-header">
                 <ul>
                     <Link to="/" className={(pathname === '/') ? 'active' : ''}><li>Home</li></Link>
-                    <Link to="/foods" className={(pathname === '/foods') ? 'active' : ''}><li>Foods</li></Link>
+                    <Link to="/foods" className={(pathname === '/foods' || pathname.split('/')[1]==="foods") ? 'active' : ''}><li>Foods</li></Link>
                     <Link to="/cart" className={(pathname === '/cart') ? 'active' : ''}><li>Cart</li></Link>
                     <Link to="/contact" className={(pathname === '/contact') ? 'active' : ''}><li>Contact</li></Link>
                 </ul>
