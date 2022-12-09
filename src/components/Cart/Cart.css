@@ -1,0 +1,106 @@
+.main-cart{
+    width: 83%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.your-cart h1{
+    color: #df2020;
+    margin-bottom: 20px;
+}
+.cart-detail table{
+
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    vertical-align: top;
+    border-color: #dee2e6;
+
+    caption-side: bottom;
+    border-collapse: collapse;
+
+    text-align: center!important;
+
+    border: 1px solid #dee2e6;
+    
+    padding: 5rem;
+}
+
+.cart-detail thead{
+    border-bottom: 1px solid black;
+   
+}
+
+table td + td,th+th {
+     border-left:1px solid #dee2e6;
+     padding: 15px;
+ }
+
+
+td{
+    border-right: 1px solid #dee2e6;
+    border-width: 0 1px;
+}
+
+th{
+    text-align: center;
+    border: 0 solid;
+    border-color: inherit;
+ 
+}
+
+td{
+    border: 0 solid;
+    border-color: inherit;
+}
+
+tr img{
+    width: 100px;
+}
+
+td svg{
+    font-size: 24px;
+    cursor: pointer;
+}
+
+h2{
+    text-align: center;
+}
+
+.total h6{
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.total h6 span{
+    color: #df2020;
+    font-size: 1.5rem;
+}
+
+.total p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.cart-btns{
+    display: flex;
+    align-items: center;
+}
+
+.cart-btns button{
+    border: none;
+    padding: 7px 25px;
+    background: #df2020;
+    color: #fff;
+    border-radius: 5px;
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+.cart-btns button+button{
+    margin-left: 20px;
+}

@@ -3,8 +3,15 @@ import products from "../../assets/fake-data/products";
 import { useState } from 'react';
 import "./Third.css"
 import { useNavigate } from 'react-router-dom';
+import { CartState } from '../../Context';
 
 const Third = () => {
+
+    const { cart,setCart } = CartState();
+    const [cartBool,setCartBool]=useState(false)
+
+    /* console.log(cart)
+    console.log(typeof setCart) */
     let navigate=useNavigate();
 
     let burger=require("../../assets/images/hamburger.png")
@@ -13,8 +20,8 @@ const Third = () => {
     //console.log(products)
     let result
     const[type,setType]=useState("All")
-    const[data,setData]=useState([])
-    const[newArr,setnewArr]=useState([])
+/*     const[data,setData]=useState([])
+    const[newArr,setnewArr]=useState([]) */
 
     function handleClick(e,value){
         console.log(e)
@@ -22,7 +29,20 @@ const Third = () => {
         navigate(`foods/id=${e.id}`);
     }
 
+    function handleCart(e,value){
+        console.log(e)
+        setCart(cart=>[...cart,value])
+        e.target.innerText="Added to cart"
+       setCartBool(true)
 
+       e.preventDefault()
+    }
+
+    console.log(cart.length)
+/*     cart.map((item)=>{
+        console.log(item)
+    }) */
+    console.log(cart)
   return (
     <>
         <div className="main-third">
@@ -48,7 +68,7 @@ const Third = () => {
                                        </div>
 
                                        <div className="cart">
-                                        <button>Add to cart</button>
+                                        <button  onClick={(e,index)=>handleCart(e,value)}>Add to cart</button>
                                        </div>
                                     </div>
                                     
@@ -66,7 +86,7 @@ const Third = () => {
                                        </div>
 
                                        <div className="cart">
-                                        <button>Add to cart</button>
+                                        <button  onClick={(e,index)=>handleCart(e,value)}>Add to cart</button>
                                        </div>
                                     </div>
                                     

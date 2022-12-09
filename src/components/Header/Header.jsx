@@ -4,12 +4,17 @@ import "./Header.css"
 import { BsFillBasketFill } from 'react-icons/bs';
 import {FiLogIn} from 'react-icons/fi' 
 import { useLocation } from 'react-router-dom';
+import { CartState } from '../../Context';
 
 const Header = () => {
+    const { cart,setCart } = CartState();
+
+
+
     const {pathname} = useLocation();
-    console.log(pathname.split('/')[1])
+    /* console.log(pathname.split('/')[1]) */
     let foodPath=pathname.split('/')[1]
-    console.log(pathname)
+    /* console.log(pathname) */
     let logo=require("../../assets/images/res-logo.png")
   return (
     <>
@@ -28,7 +33,7 @@ const Header = () => {
             </div>
             <div className="right-header">
                 <div>
-                    <Link to="/cart" className={(pathname === '/cart') ? 'active' : ''}><BsFillBasketFill/><sup>0</sup></Link>
+                    <Link to="/cart" className={(pathname === '/cart') ? 'active' : ''}><BsFillBasketFill/><sup>{cart.length}</sup></Link>
                 </div>
                 <span><Link to="/login"  className={(pathname === '/login   ') ? 'active' : ''}><FiLogIn/></Link></span>
             </div>

@@ -4,9 +4,11 @@ import Footer from '../Footer/Footer'
 import "./Food.css"
 import { useNavigate } from 'react-router-dom'
 import products from '../../assets/fake-data/products'
-
+import { CartState } from '../../Context';
 
 const Food = () => {
+  const { cart,setCart } = CartState();
+
   let navigate=useNavigate();
 
   function handleClick(e){
@@ -14,6 +16,12 @@ const Food = () => {
         
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
     navigate(`id=${e.id}`);
+  }
+  function handleCart(e,value){
+    console.log(e)
+    setCart(cart=>[...cart,value])
+    e.target.innerText="Added to cart"
+     e.preventDefault()
 }
 
   return (
@@ -38,7 +46,7 @@ const Food = () => {
                                        </div>
 
                                        <div className="cart">
-                                        <button>Add to cart</button>
+                                        <button onClick={(e,index)=>handleCart(e,value)}>Add to cart</button>
                                        </div>
                                     </div>
                                     

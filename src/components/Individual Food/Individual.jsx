@@ -4,9 +4,10 @@ import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import { useNavigate } from 'react-router-dom'
 import "./individual.css"
+import { CartState } from '../../Context';
 
 const Individual = () => {
-  
+  const { cart,setCart } = CartState();
  
   let navigate=useNavigate()
   
@@ -47,6 +48,15 @@ function handleFormBtn(e){
   e.preventDefault()
 }
 
+function handleCart(e,value){
+  console.log(e)
+  setCart(cart=>[...cart,value])
+    e.target.innerText="Added to cart"
+  
+
+  e.preventDefault()
+  }
+
   return (
     <>
       <Header/>
@@ -67,7 +77,7 @@ function handleFormBtn(e){
             <h2>{result[0].title}</h2>
             <p className='product-price'>Price: <span>${result[0].price}</span></p>
             <p className='product-category'>Category: <span>{result[0].category}</span> </p>
-            <button className='addtocart'>Add to Cart</button>
+            <button className='addtocart' onClick={(e,result)=>handleCart(e,result)}>Add to Cart</button>
           </div>
         </div>
 
@@ -127,7 +137,7 @@ function handleFormBtn(e){
                                   </div>
 
                                   <div className="cart">
-                                  <button>Add to cart</button>
+                                  <button onClick={(e,index)=>handleCart(e,value)}>Add to cart</button>
                                   </div>
                               </div>
                               

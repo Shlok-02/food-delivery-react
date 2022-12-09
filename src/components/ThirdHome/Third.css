@@ -85,6 +85,15 @@ button{
     font-size: .9rem;
 }
 
+.active-cart-btn button{
+    background: #fde4e4;
+    border: none;
+    padding: 7px 25px;
+    color: #df2020;
+    border-radius: 5px;
+    font-size: .9rem;
+}
+
 .cart{
     display:flex;
     justify-content: center;

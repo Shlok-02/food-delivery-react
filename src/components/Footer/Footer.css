@@ -21,7 +21,10 @@
 .footer-logo img{
     margin-top: 10px;
     width: 50px;
-   
+}
+
+.second-top-footer h2{
+    text-align: left;
 }
 
 .footer-logo h5{

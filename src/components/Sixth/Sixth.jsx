@@ -18,7 +18,7 @@ const Sixth = () => {
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio quasi qui minus quos sit perspiciatis inventore quis provident placeat fugiat!
                 </p>
 
-                <Carousel autoPlay={true} infiniteLoop={true} interval={3000} style={{zindex:'-1'}}>
+               {/*  <Carousel autoPlay={true} infiniteLoop={true} interval={3000} style={{zindex:'-1'}}>
                     <div className="review">
                         <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto odio esse soluta fugit facilis quam nostrum accusamus iste, ducimus atque!"</p>
                         <div className="review-person">
@@ -41,7 +41,7 @@ const Sixth = () => {
                         </div>
                     </div>
 
-                </Carousel>
+                </Carousel> */}
             </div>
             <div className="right-sixth">
                 <img src={network} alt="" />

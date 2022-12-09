@@ -1,0 +1,82 @@
+.main-checkout{
+    width: 83%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.top-checkout h1{
+    margin-bottom: 40px;
+    color: #df2020;
+    margin-bottom: 80px;
+}
+
+.mid-checkout{
+    display: flex;
+    align-items: center;
+}
+
+.left-mid-checkout{
+    width: 70%;
+}
+
+.left-mid-checkout form{
+    width: 100%;
+   
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.left-mid-checkout form input,textarea{
+    width: 100%;
+    background: transparent;
+    padding: 7px 20px;
+    border: none;
+    border-bottom: 1px solid rgba(33,34,69,.2980392156862745);
+
+    margin: 15px 0px;
+    margin-top: 10px;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+
+}
+
+.left-mid-checkout input:focus,textarea:focus{
+    outline: none;
+}
+
+.left-mid-checkout button{
+    border: none;
+    padding: 7px 25px;
+    background: #df2020;
+    color: #fff;
+    border-radius: 5px;
+    font-size: .9rem;
+    margin-top: 20px;
+}
+
+.left-mid-checkout h5{
+    font-size: 1rem;
+    margin-bottom: 1.5rem!important;
+}
+
+.right-mid-checkout{
+    background: #fde4e4;
+    padding: 30px;
+    height: 100%;
+    width: 40%;
+}
+
+.right-mid-checkout h6{
+    margin: 10px 0px;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.right-mid-checkout span{
+    float: right;
+}
+
+.right-total{
+    border-top: 1px solid rgb(154, 154, 154);
+}
